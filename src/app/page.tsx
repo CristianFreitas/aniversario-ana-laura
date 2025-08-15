@@ -34,19 +34,19 @@ export default function Home() {
         <div className={`relative z-10 text-center px-4 sm:px-6 md:px-8 transform transition-all duration-1000 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <div className="mb-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 mb-4">
+          <div className="mb-6 sm:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 mb-3 sm:mb-4">
               Ana Laura
             </h1>
-            <div className="flex items-center justify-center space-x-2 sm:space-x-4 text-xl sm:text-2xl md:text-4xl font-light text-gray-700">
+            <div className="flex items-center justify-center space-x-1 sm:space-x-2 md:space-x-4 text-lg sm:text-xl md:text-2xl lg:text-4xl font-light text-gray-700">
               <span className="animate-pulse">✨</span>
               <span>15 Anos</span>
               <span className="animate-pulse">✨</span>
             </div>
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 mx-4 sm:mx-auto max-w-2xl shadow-2xl">
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6 italic leading-relaxed text-center">
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-3xl p-3 sm:p-6 md:p-8 mx-2 sm:mx-4 md:mx-auto max-w-2xl shadow-2xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-3 sm:mb-4 md:mb-6 italic leading-relaxed text-center px-1">
               &ldquo;A felicidade pode ser encontrada até nos momentos mais difíceis, 
               se você lembrar de acender a luz.&rdquo;
             </p>

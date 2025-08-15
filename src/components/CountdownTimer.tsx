@@ -52,32 +52,32 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
 
   if (!isClient) {
     return (
-      <div className="flex justify-center items-center space-x-4 md:space-x-8">
+      <div className="flex justify-center items-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8">
         <div className="text-center">
-          <div className="bg-gradient-to-br from-pink-500 to-purple-500 text-white rounded-2xl p-4 md:p-6 shadow-lg min-w-[80px]">
-            <div className="text-2xl md:text-4xl font-bold">--</div>
-            <div className="text-xs md:text-sm uppercase tracking-wide">Dias</div>
+          <div className="bg-gradient-to-br from-pink-500 to-purple-500 text-white rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">--</div>
+            <div className="text-xs sm:text-xs md:text-sm uppercase tracking-wide">Dias</div>
           </div>
         </div>
-        <div className="text-2xl md:text-4xl text-gray-400">:</div>
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-gray-400">:</div>
         <div className="text-center">
-          <div className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-2xl p-4 md:p-6 shadow-lg min-w-[80px]">
-            <div className="text-2xl md:text-4xl font-bold">--</div>
-            <div className="text-xs md:text-sm uppercase tracking-wide">Horas</div>
+          <div className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">--</div>
+            <div className="text-xs sm:text-xs md:text-sm uppercase tracking-wide">Horas</div>
           </div>
         </div>
-        <div className="text-2xl md:text-4xl text-gray-400">:</div>
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-gray-400">:</div>
         <div className="text-center">
-          <div className="bg-gradient-to-br from-indigo-500 to-pink-500 text-white rounded-2xl p-4 md:p-6 shadow-lg min-w-[80px]">
-            <div className="text-2xl md:text-4xl font-bold">--</div>
-            <div className="text-xs md:text-sm uppercase tracking-wide">Min</div>
+          <div className="bg-gradient-to-br from-indigo-500 to-pink-500 text-white rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">--</div>
+            <div className="text-xs sm:text-xs md:text-sm uppercase tracking-wide">Min</div>
           </div>
         </div>
-        <div className="text-2xl md:text-4xl text-gray-400">:</div>
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-gray-400">:</div>
         <div className="text-center">
-          <div className="bg-gradient-to-br from-pink-500 to-purple-500 text-white rounded-2xl p-4 md:p-6 shadow-lg min-w-[80px]">
-            <div className="text-2xl md:text-4xl font-bold">--</div>
-            <div className="text-xs md:text-sm uppercase tracking-wide">Seg</div>
+          <div className="bg-gradient-to-br from-pink-500 to-purple-500 text-white rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">--</div>
+            <div className="text-xs sm:text-xs md:text-sm uppercase tracking-wide">Seg</div>
           </div>
         </div>
       </div>
@@ -92,21 +92,21 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
   ]
 
   return (
-    <div className="flex justify-center items-center space-x-4 md:space-x-8">
+    <div className="flex justify-center items-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8">
       {timeUnits.map((unit, index) => (
         <div key={unit.label} className="flex items-center">
           <div className="text-center">
-            <div className={`bg-gradient-to-br ${unit.color} text-white rounded-2xl p-4 md:p-6 shadow-lg min-w-[80px] transform hover:scale-105 transition-transform duration-300`}>
-              <div className="text-2xl md:text-4xl font-bold">
+            <div className={`bg-gradient-to-br ${unit.color} text-white rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg min-w-[60px] sm:min-w-[70px] md:min-w-[80px] transform hover:scale-105 transition-transform duration-300`}>
+              <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">
                 {unit.value.toString().padStart(2, '0')}
               </div>
-              <div className="text-xs md:text-sm uppercase tracking-wide">
+              <div className="text-xs sm:text-xs md:text-sm uppercase tracking-wide">
                 {unit.label}
               </div>
             </div>
           </div>
           {index < timeUnits.length - 1 && (
-            <div className="text-2xl md:text-4xl text-gray-400 mx-2">:</div>
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-gray-400 mx-1">:</div>
           )}
         </div>
       ))}
